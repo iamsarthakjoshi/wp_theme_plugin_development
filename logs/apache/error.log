@@ -1,2 +1,12 @@
 [Sat Dec 29 22:39:59.768992 2018] [mpm_event:notice] [pid 477:tid 140523791480704] AH00489: Apache/2.4.10 (Debian) configured -- resuming normal operations
 [Sat Dec 29 22:39:59.769173 2018] [core:notice] [pid 477:tid 140523791480704] AH00094: Command line: '/usr/sbin/apache2'
+[Sat Jan 05 09:24:25.981083 2019] [mpm_event:notice] [pid 273:tid 140475589212032] AH00489: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Sat Jan 05 09:24:25.981257 2019] [core:notice] [pid 273:tid 140475589212032] AH00094: Command line: '/usr/sbin/apache2'
+[Wed Jan 16 11:13:40.748943 2019] [proxy_fcgi:error] [pid 279:tid 140475403060992] [client 172.17.0.1:53636] AH01068: Got bogus version 114, referer: http://wpthemeplugindev.local/wp-admin/plugin-install.php?s=wp+&tab=search&type=term
+[Wed Jan 16 11:13:40.749327 2019] [proxy_fcgi:error] [pid 279:tid 140475403060992] (22)Invalid argument: [client 172.17.0.1:53636] AH01075: Error dispatching request to : (passing brigade to output filters), referer: http://wpthemeplugindev.local/wp-admin/plugin-install.php?s=wp+&tab=search&type=term
+[Wed Jan 16 11:18:43.977468 2019] [proxy_fcgi:error] [pid 279:tid 140475377882880] [client 172.17.0.1:53830] AH01068: Got bogus version 35, referer: http://wpthemeplugindev.local/wp-admin/plugin-install.php?s=WP+Q&tab=search&type=term
+[Wed Jan 16 11:18:43.977844 2019] [proxy_fcgi:error] [pid 279:tid 140475377882880] (22)Invalid argument: [client 172.17.0.1:53830] AH01075: Error dispatching request to : (passing brigade to output filters), referer: http://wpthemeplugindev.local/wp-admin/plugin-install.php?s=WP+Q&tab=search&type=term
+[Thu Jan 17 11:27:34.186919 2019] [mpm_event:notice] [pid 151:tid 140513247516544] AH00489: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Thu Jan 17 11:27:34.187045 2019] [core:notice] [pid 151:tid 140513247516544] AH00094: Command line: '/usr/sbin/apache2'
+[Fri Jan 18 06:20:44.750697 2019] [mpm_event:notice] [pid 236:tid 140075313735552] AH00489: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Fri Jan 18 06:20:44.750801 2019] [core:notice] [pid 236:tid 140075313735552] AH00094: Command line: '/usr/sbin/apache2'

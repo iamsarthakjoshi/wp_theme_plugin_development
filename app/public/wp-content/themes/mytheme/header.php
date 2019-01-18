@@ -4,49 +4,44 @@
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<link rel="icon" type="image/png" href="images/favicon.png">
-	<!-- Stylesheets
-	============================================= -->
-	<?php wp_head(); ?>
+	<!-- Stylesheets -->
+	<?php wp_head();?>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-	<!-- Document Title
-	============================================= -->
-	<title>Index Template</title>
-
 </head>
 
 <body <?php body_class('no-transition stretched');?> >
 
-<!-- Document Wrapper
-============================================= -->
+<!-- Document Wrapper -->
 <div id="wrapper" class="clearfix">
-	<!-- Top Bar
-		============================================= -->
+	<!-- Top Bar -->
 	<div id="top-bar" class="dark">
 
 		<div class="container clearfix">
 
 			<div class="col_half nobottommargin">
-
-				<!-- Top Links
-                ============================================= -->
+				<!-- Top Links -->
 				<div class="top-links">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="faqs.html">FAQs</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
+				<?php
+				if(has_nav_menu('secondary')) {
+					wp_nav_menu(array(
+						'theme_location'	=> 'secondary',
+						'container'			=> false,
+						'fallback_cb'		=> false,
+						'depth'				=> 1
+					));
+				}
+				?>
 				</div><!-- .top-links end -->
-
 			</div>
 
 			<div class="col_half fright col_last nobottommargin">
-
-				<!-- Top Social
-                ============================================= -->
+				<!-- Top Social -->
 				<div id="top-social">
 					<ul>
-						<li><a href="#" class="si-facebook"><span class="ts-icon"><i class="icon-facebook"></i></span><span class="ts-text">Facebook</span></a></li>
+						<?php if(get_theme_mod('sj_facebook_handle')) : ?>
+						<li><a href="https://facebook.com/<?php echo get_theme_mod('sj_facebook_handle');?>" class="si-facebook"><span class="ts-icon"><i class="icon-facebook"></i></span><span class="ts-text">Facebook</span></a></li>
+						<?php endif; ?>
+						
 						<li><a href="#" class="si-twitter"><span class="ts-icon"><i class="icon-twitter"></i></span><span class="ts-text">Twitter</span></a></li>
 						<li><a href="#" class="si-instagram"><span class="ts-icon"><i class="icon-instagram2"></i></span><span class="ts-text">Instagram</span></a></li>
 						<li><a href="tel:+91.11.85412542" class="si-call"><span class="ts-icon"><i class="icon-call"></i></span><span class="ts-text">+91.11.85412542</span></a></li>
@@ -60,17 +55,17 @@
 
 	</div><!-- #top-bar end -->
 
-	<!-- Header
-    ============================================= -->
+	<!-- Header -->
 	<header id="header" class="sticky-style-2">
 
 		<div class="container clearfix">
 
-			<!-- Logo
-            ============================================= -->
+			<!-- Logo -->
 			<div id="logo">
-				<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png">Udemy</a>
-			</div><!-- #logo end -->
+				<?php if(has_custom_logo()) : the_custom_logo(); else: ?>
+				<a href="<?php echo home_url('/');?>" class="standard-logo"><?php bloginfo( 'name' ); ?></a>
+				<?php endif; ?>
+			</div><!-- #logo end --><!-- #logo end -->
 
 			<div class="top-advert">
 				<img src="images/magazine/ad.jpg" alt="Ad">
@@ -80,14 +75,10 @@
 
 		<div id="header-wrap">
 
-			<!-- Primary Navigation
-            ============================================= -->
+			<!-- Primary Navigation -->
 			<nav id="primary-menu" class="style-2">
-
 				<div class="container clearfix">
-
 					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-
 					<?php
 						if(has_nav_menu('primary')) {
 							wp_nav_menu(array(
@@ -98,9 +89,7 @@
 							));
 						}
 					?>
-
-					<!-- Top Cart
-						============================================= -->
+					<!-- Top Cart -->
 					<div id="top-cart">
 						<a href="#" id="top-cart-trigger"><i class="icon-shopping-cart"></i><span>5</span></a>
 						<div class="top-cart-content">
@@ -146,9 +135,7 @@
 					</div><!-- #top-search end -->
 
 				</div>
-
 			</nav><!-- #primary-menu end -->
-
 		</div>
 
 	</header><!-- #header end -->

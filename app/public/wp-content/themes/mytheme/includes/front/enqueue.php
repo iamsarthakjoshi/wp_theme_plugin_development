@@ -13,7 +13,7 @@ function sj_enqueue(){
 	wp_enqueue_style( 'sj_google_fonts' );
 	wp_enqueue_style( 'sj_bootstrap' );
 	wp_enqueue_style( 'sj_style' );
-	wp_enqueue_style( 'sj_dark' );
+	wp_enqueue_style( 'sj_dark' ); 
 	wp_enqueue_style( 'sj_font_icons' );
 	wp_enqueue_style( 'sj_animate' );
 	wp_enqueue_style( 'sj_magnific_popup' );
