@@ -3,7 +3,7 @@
 <!-- Page Title -->
 <section id="page-title">
     <div class="container clearfix">
-        <h1><?php __e('Page Not Found', 'mytheme')?></h1>
+        <h1><?php _e('Page Not Found', 'mytheme'); ?></h1>
     </div>
 </section><!-- #page-title end -->
 
@@ -17,8 +17,8 @@
 
             <div class="col_half nobottommargin col_last">
                 <div class="heading-block nobottomborder">
-                    <h4><?php __e("Ooopps.! The Page you were looking for, couldn't be found.", "mytheme");?></h4>
-                    <span><?php __e('Try searching for the best match or browse the links below:', 'mytheme');?></span>
+                    <h4><?php _e("Ooopps.! The Page you were looking for, couldn't be found.", 'mytheme');?></h4>
+                    <span><?php _e('Try searching for the best match or browse the links below:', 'mytheme');?></span>
                 </div>
                 <?php echo get_search_form();?>
             </div>

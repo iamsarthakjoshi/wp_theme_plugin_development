@@ -63,8 +63,9 @@ define('NONCE_SALT',       'nSqei67EKreiZYYOCRuqOn7smlD9xuE67pBezSTPPMmiI1KFWvoU
  */
 $table_prefix = 'wp_';
 
-
-
+define( 'WP_DEBUG', true ); 
+define( 'SCRIPT_DEBUG', true );
+define( 'WP_MEMORY_LIMIT', '256M' );
 
 /* That's all, stop editing! Happy blogging. */
 
